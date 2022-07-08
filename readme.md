@@ -3,12 +3,15 @@
 This is a manual to install a function in your shell (bashrc or zshrc).
 
 ###You must add the following function to your shell terminal:
+#### for ~/.bashrc
 
-	h() { history | grep "$1" | grep "$2" | grep "$3" | head -10 | sed 's/[^ ]*  //'; }
+	echo "h() { history | grep "$1" | grep "$2" | grep "$3" | head -10 | sed 's/[^ ]*  //'; }" >> ~/.bashrc
 	
-###Save the file and execute:
+###You must add the following function to your shell terminal:
+#### for ~/.zshrc
 
-	Source ~/.bashrc or source ~/.zshrc 
+	echo "h() { history | grep "$1" | grep "$2" | grep "$3" | head -10 | sed 's/[^ ]*  //'; }" >> ~/.zshrc
+	
 	
 ###To use the command you can execute:
 
